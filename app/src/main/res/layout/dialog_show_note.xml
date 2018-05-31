@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageViewImportant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/ic_warning_black_24dp"
+        app:srcCompat="@drawable/ic_warning_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageViewTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageViewImportant"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:src="@drawable/ic_check_box_outline_blank_black_24dp"
+        app:srcCompat="@drawable/ic_check_box_outline_blank_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageViewIdea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageViewImportant"
+        android:layout_marginStart="117dp"
+        android:layout_marginLeft="117dp"
+        android:src="@drawable/ic_wb_incandescent_black_24dp"
+        app:srcCompat="@drawable/ic_wb_incandescent_black_24dp" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="279dp"
+        android:layout_height="85dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageViewImportant"
+        android:layout_alignLeft="@+id/imageViewImportant"
+        android:layout_marginTop="89dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="238dp"
+        android:layout_height="57dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <Button
+        android:id="@+id/BtnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="104dp"
+        android:layout_marginStart="109dp"
+        android:text="@string/ok_button" />
+</RelativeLayout>
