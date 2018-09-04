@@ -48,10 +48,11 @@ public class DialogNewNote extends DialogFragment
                 newNote.setTodo(checkBoxTodo.isChecked());
                 newNote.setImportant(checkBoxImportant.isChecked());
 
-                //get reference to the main activity
+                //get reference to the main activity by creating an object of the mainactivity
                 MainActivity callingActivity = (MainActivity)getActivity();
 
-                //pass new note back to main activity
+                //pass new note back to main activity. we can use the method since it was defined in the mainActivity class and we are using
+                //its object
                 callingActivity.createNewNote(newNote);
                 //quit the dialog
                 dismiss();
